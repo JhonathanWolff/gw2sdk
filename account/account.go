@@ -17,7 +17,7 @@ type AccountResponse struct {
 func (a *Account) Get() AccountResponse {
 
 	response := AccountResponse{}
-	a.Gw2sdk.Retrieve(&response)
+	a.Gw2sdk.Retrieve("account", nil, &response)
 	fmt.Println(response.Id)
 
 	return response

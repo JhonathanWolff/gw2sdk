@@ -13,11 +13,36 @@ type GW2sdk struct {
 	ApiResponse ApiResponse
 }
 
-func (gw2 *GW2sdk) Retrieve(target interface{}) {
+func ParseParameters(parameters map[string]string) string {
 
-	endpoint := "account"
+	if parameters == nil {
+		return ""
+	}
 
-	request_url := API_URL + endpoint
+	first := true
+	var parsed string = ""
+	operator := "?"
+	for k, v := range parameters {
+
+		if first {
+			first = false
+			operator = "&"
+		}
+		parsed += operator + k + "=" + v
+
+	}
+
+	return parsed
+
+}
+
+func (gw2 *GW2sdk) Retrieve(
+	endpoint_path string,
+	parameters map[string]string,
+	target interface{},
+) {
+
+	request_url := API_URL + endpoint_path + ParseParameters(parameters)
 
 	client := &http.Client{}
 
