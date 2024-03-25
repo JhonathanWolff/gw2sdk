@@ -30,6 +30,7 @@ type AchivementResponseDetails []struct {
 	} `json:"rewards"`
 }
 
+// https://wiki.guildwars2.com/wiki/API:2/achievements
 func (a *Achivement) Get(parameters map[string]string) interface{} {
 
 	if parameters != nil && len(parameters) > 0 {

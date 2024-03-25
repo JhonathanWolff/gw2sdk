@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"strings"
 )
 
 const API_URL string = "https://api.guildwars2.com/v2/"
@@ -14,7 +15,7 @@ type GW2sdk struct {
 	ApiResponse ApiResponse
 }
 
-func ParseParameters(parameters map[string]string) string {
+func ParseParameters(url string, parameters map[string]string) string {
 
 	if parameters == nil {
 		return ""
@@ -25,7 +26,7 @@ func ParseParameters(parameters map[string]string) string {
 	operator := "&"
 	for k, v := range parameters {
 
-		if first {
+		if first && !strings.Contains(url, "?") {
 			first = false
 			operator = "?"
 		}
@@ -43,7 +44,8 @@ func (gw2 *GW2sdk) Retrieve(
 	target interface{},
 ) {
 
-	request_url := API_URL + endpoint_path + ParseParameters(parameters)
+	request_url := API_URL + endpoint_path
+	request_url += ParseParameters(request_url, parameters)
 	fmt.Println(request_url)
 
 	client := &http.Client{}
