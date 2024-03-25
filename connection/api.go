@@ -2,6 +2,7 @@ package connection
 
 import (
 	"encoding/json"
+	"fmt"
 	"io"
 	"net/http"
 )
@@ -21,12 +22,12 @@ func ParseParameters(parameters map[string]string) string {
 
 	first := true
 	var parsed string = ""
-	operator := "?"
+	operator := "&"
 	for k, v := range parameters {
 
 		if first {
 			first = false
-			operator = "&"
+			operator = "?"
 		}
 		parsed += operator + k + "=" + v
 
@@ -43,6 +44,7 @@ func (gw2 *GW2sdk) Retrieve(
 ) {
 
 	request_url := API_URL + endpoint_path + ParseParameters(parameters)
+	fmt.Println(request_url)
 
 	client := &http.Client{}
 
@@ -62,9 +64,15 @@ func (gw2 *GW2sdk) Retrieve(
 		panic(err)
 	}
 
+	bytes, _ := io.ReadAll(res.Body)
+	if res.StatusCode != 200 {
+		panic(string(bytes))
+	}
+
+	//	fmt.Println(string(bytes))
+
 	defer res.Body.Close()
 
-	bytes, _ := io.ReadAll(res.Body)
 	json.Unmarshal(bytes, &target)
 
 }

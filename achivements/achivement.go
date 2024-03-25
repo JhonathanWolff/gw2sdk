@@ -1,6 +1,7 @@
 package achivements
 
 import (
+	"fmt"
 	Connection "gw2sdk/connection"
 )
 
@@ -8,11 +9,39 @@ type Achivement struct {
 	Gw2sdk Connection.GW2sdk
 }
 
-func (a *Achivement) Get() interface{} {
+type AchivementResponse []int
 
-	var map_response map[string]interface{} = make(map[string]interface{})
-	result := a.Gw2sdk.Retrieve(map_response)
+type AchivementResponseDetails []struct {
+	ID          int      `json:"id"`
+	Name        string   `json:"name"`
+	Description string   `json:"description"`
+	Requirement string   `json:"requirement"`
+	LockedText  string   `json:"locked_text"`
+	Type        string   `json:"type"`
+	Flags       []string `json:"flags"`
+	Tiers       []struct {
+		Count  int `json:"count"`
+		Points int `json:"points"`
+	} `json:"tiers"`
+	Rewards []struct {
+		Type  string `json:"type"`
+		ID    int    `json:"id,omitempty"`
+		Count int    `json:"count"`
+	} `json:"rewards"`
+}
 
-	return result
+func (a *Achivement) Get(parameters map[string]string) interface{} {
+
+	if parameters != nil && len(parameters) > 0 {
+		fmt.Println("details")
+		response := AchivementResponseDetails{}
+		a.Gw2sdk.Retrieve("achievements", parameters, &response)
+		return response
+	}
+
+	fmt.Println("list")
+	response := AchivementResponse{}
+	a.Gw2sdk.Retrieve("achievements", parameters, &response)
+	return response
 
 }
