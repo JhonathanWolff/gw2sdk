@@ -1,7 +1,6 @@
 package authenticated
 
 import (
-	"fmt"
 	Connection "gw2sdk/connection"
 )
 
@@ -18,7 +17,6 @@ func (a *Account) Get() AccountResponse {
 
 	response := AccountResponse{}
 	a.Gw2sdk.Retrieve("account", nil, &response)
-	fmt.Println(response.Id)
 
 	return response
 

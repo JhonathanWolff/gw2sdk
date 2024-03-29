@@ -1,18 +1,20 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
-	authenticated "gw2sdk/authenticated/account"
+	other "gw2sdk/authenticated"
 	"gw2sdk/connection"
 	"os"
 )
 
 func main() {
 	var gw2sdk connection.GW2sdk = connection.GW2sdk{Token: os.Getenv("GW2_TOKEN")}
-	account := &authenticated.Account{Gw2sdk: gw2sdk}
-	// var parameter map[string]string = make(map[string]string)
-	// parameter["ids"] = "1,2"
+	characters := &other.TokenInformation{Gw2sdk: gw2sdk}
+	// account := &authenticated.Account{Gw2sdk: gw2sdk}
 
-	fmt.Println(account.Get())
+	response := characters.Get()
+	res2B, _ := json.Marshal(response)
+	fmt.Println(string(res2B))
 
 }
