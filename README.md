@@ -117,7 +117,7 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 ## Guild
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [guild/id](https://wiki.guildwars2.com/wiki/API:2/guild/id) | Returns core details about a given guild. | GuildId | :x: |
+| [guild/:id](https://wiki.guildwars2.com/wiki/API:2/guild/:id) | Returns core details about a given guild. | Guild:id | :x: |
 | [emblem](https://wiki.guildwars2.com/wiki/API:2/emblem) | Returns image resources needed to render guild emblems. | Emblem | :x: |
 | [guild/permissions](https://wiki.guildwars2.com/wiki/API:2/guild/permissions) | Returns information about guild rank permissions. | GuildPermissions | :x: |
 | [guild/search](https://wiki.guildwars2.com/wiki/API:2/guild/search) | Returns information on guild ids to be used for other API queries. | GuildSearch | :x: |
@@ -125,14 +125,14 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 ## Guild Authenticated
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [guild/id/log](https://wiki.guildwars2.com/wiki/API:2/guild/id/log) | Returns information about a guild's event log. | GuildIdLog | :x: |
-| [guild/id/members](https://wiki.guildwars2.com/wiki/API:2/guild/id/members) | Returns information about members of a guild. | GuildIdMembers | :x: |
-| [guild/id/ranks](https://wiki.guildwars2.com/wiki/API:2/guild/id/ranks) | Returns information about the permission ranks of a guild. | GuildIdRanks | :x: |
-| [guild/id/stash](https://wiki.guildwars2.com/wiki/API:2/guild/id/stash) | Returns information about the contents of a guild's stash. | GuildIdStash | :x: |
-| [guild/id/storage](https://wiki.guildwars2.com/wiki/API:2/guild/id/storage) | Returns information about the contents of a guild's storage. | GuildIdStorage | :x: |
-| [guild/id/treasury](https://wiki.guildwars2.com/wiki/API:2/guild/id/treasury) | Returns information about a guild's treasury contents. | GuildIdTreasury | :x: |
-| [guild/id/teams](https://wiki.guildwars2.com/wiki/API:2/guild/id/teams) | Returns information about a guild's teams. | GuildIdTeams | :x: |
-| [guild/id/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/id/upgrades) | Returns information about a guild's upgrades. | GuildIdUpgrades | :x: |
+| [guild/:id/log](https://wiki.guildwars2.com/wiki/API:2/guild/:id/log) | Returns information about a guild's event log. | Guild:idLog | :x: |
+| [guild/:id/members](https://wiki.guildwars2.com/wiki/API:2/guild/:id/members) | Returns information about members of a guild. | Guild:idMembers | :x: |
+| [guild/:id/ranks](https://wiki.guildwars2.com/wiki/API:2/guild/:id/ranks) | Returns information about the permission ranks of a guild. | Guild:idRanks | :x: |
+| [guild/:id/stash](https://wiki.guildwars2.com/wiki/API:2/guild/:id/stash) | Returns information about the contents of a guild's stash. | Guild:idStash | :x: |
+| [guild/:id/storage](https://wiki.guildwars2.com/wiki/API:2/guild/:id/storage) | Returns information about the contents of a guild's storage. | Guild:idStorage | :x: |
+| [guild/:id/treasury](https://wiki.guildwars2.com/wiki/API:2/guild/:id/treasury) | Returns information about a guild's treasury contents. | Guild:idTreasury | :x: |
+| [guild/:id/teams](https://wiki.guildwars2.com/wiki/API:2/guild/:id/teams) | Returns information about a guild's teams. | Guild:idTeams | :x: |
+| [guild/:id/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/:id/upgrades) | Returns information about a guild's upgrades. | Guild:idUpgrades | :x: |
 ## Home Instance
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
@@ -182,7 +182,7 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 | [pvp](https://wiki.guildwars2.com/wiki/API:2/pvp) | Returns information about the v2/pvp endpoints. | Pvp | :x: |
 | [pvp/ranks](https://wiki.guildwars2.com/wiki/API:2/pvp/ranks) | Returns information about PvP Rank. | PvpRanks | :x: |
 | [pvp/seasons](https://wiki.guildwars2.com/wiki/API:2/pvp/seasons) | Returns information about League seasons. | PvpSeasons | :x: |
-| [pvp/seasons/id/leaderboards](https://wiki.guildwars2.com/wiki/API:2/pvp/seasons/id/leaderboards) | Returns information about League leaderboards. | PvpSeasonsIdLeaderboards | :x: |
+| [pvp/seasons/:id/leaderboards](https://wiki.guildwars2.com/wiki/API:2/pvp/seasons/:id/leaderboards) | Returns information about League leaderboards. | PvpSeasons:idLeaderboards | :x: |
 ## Trading post
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
