@@ -38,58 +38,58 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 ## Achievements
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [achievements](https://wiki.guildwars2.com/wiki/API:2/achievements) | Returns information about achievements. | Achievements | :x: |
-| [achievements/daily](https://wiki.guildwars2.com/wiki/API:2/achievements/daily) | Returns information about daily achievements. | AchievementsDaily | :x: |
-| [achievements/daily/tomorrow](https://wiki.guildwars2.com/wiki/API:2/achievements/daily/tomorrow) | Returns information about the next daily achievements. | AchievementsDailyTomorrow | :x: |
-| [achievements/groups](https://wiki.guildwars2.com/wiki/API:2/achievements/groups) | Returns information about achievement groups. | AchievementsGroups | :x: |
-| [achievements/categories](https://wiki.guildwars2.com/wiki/API:2/achievements/categories) | Returns information about achievement categories. | AchievementsCategories | :x: |
+| [achievements](https://wiki.guildwars2.com/wiki/API:2/achievements) | Returns information about achievements. | Achievements | :heavy_check_mark: |
+| [achievements/daily](https://wiki.guildwars2.com/wiki/API:2/achievements/daily) | Returns information about daily achievements. | AchievementsDaily | :heavy_check_mark: |
+| [achievements/daily/tomorrow](https://wiki.guildwars2.com/wiki/API:2/achievements/daily/tomorrow) | Returns information about the next daily achievements. | AchievementsDailyTomorrow | :heavy_check_mark: |
+| [achievements/groups](https://wiki.guildwars2.com/wiki/API:2/achievements/groups) | Returns information about achievement groups. | AchievementsGroups | :heavy_check_mark: |
+| [achievements/categories](https://wiki.guildwars2.com/wiki/API:2/achievements/categories) | Returns information about achievement categories. | AchievementsCategories | :heavy_check_mark: |
 ## Authenticated
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [account](https://wiki.guildwars2.com/wiki/API:2/account) | Returns information about an account associated with an API key. | Account | :x: |
-| [account/achievements](https://wiki.guildwars2.com/wiki/API:2/account/achievements) | Returns information about an account's achievement progress. | AccountAchievements | :x: |
-| [account/bank](https://wiki.guildwars2.com/wiki/API:2/account/bank) | Returns information about a bank associated with an API key. | AccountBank | :x: |
-| [account/dailycrafting](https://wiki.guildwars2.com/wiki/API:2/account/dailycrafting) | Returns information about (daily) crafted materials (since the most recent reset) associated with an API key. | AccountDailycrafting | :x: |
-| [account/dungeons](https://wiki.guildwars2.com/wiki/API:2/account/dungeons) | Returns information about the current daily cleared dungeons associated with an API key. | AccountDungeons | :x: |
-| [account/dyes](https://wiki.guildwars2.com/wiki/API:2/account/dyes) | Returns information about unlocked dyes associated with an API key. | AccountDyes | :x: |
-| [account/finishers](https://wiki.guildwars2.com/wiki/API:2/account/finishers) | Returns information about unlocked finishers associated with an API key. | AccountFinishers | :x: |
-| [account/gliders](https://wiki.guildwars2.com/wiki/API:2/account/gliders) | Returns information about unlocked gliders associated with an API key. | AccountGliders | :x: |
-| [account/home/cats](https://wiki.guildwars2.com/wiki/API:2/account/home/cats) | Returns information about unlocked cats in the home instance associated with an API key. | AccountHomeCats | :x: |
-| [account/home/nodes](https://wiki.guildwars2.com/wiki/API:2/account/home/nodes) | Returns information about unlocked nodes in the home instance associated with an API key. | AccountHomeNodes | :x: |
-| [account/inventory](https://wiki.guildwars2.com/wiki/API:2/account/inventory) | Returns information about the shared inventory slots associated with an API key. | AccountInventory | :x: |
-| [account/jadebots](https://wiki.guildwars2.com/wiki/API:2/account/jadebots) | Returns information about unlocked jade bot skins associated with an API key. | AccountJadebots | :x: |
-| [account/luck](https://wiki.guildwars2.com/wiki/API:2/account/luck) | Returns information about acquired luck associated with an API key. | AccountLuck | :x: |
-| [account/legendaryarmory](https://wiki.guildwars2.com/wiki/API:2/account/legendaryarmory) | Returns information about the Legendary Armory associated with an API key. | AccountLegendaryarmory | :x: |
-| [account/mailcarriers](https://wiki.guildwars2.com/wiki/API:2/account/mailcarriers) | Returns information about the mail carriers associated with an API key. | AccountMailcarriers | :x: |
-| [account/mapchests](https://wiki.guildwars2.com/wiki/API:2/account/mapchests) | Returns information about (daily) map chest rewards received (since the most recent reset) associated with an API key. | AccountMapchests | :x: |
-| [account/masteries](https://wiki.guildwars2.com/wiki/API:2/account/masteries) | Returns information about unlocked masteries associated with an API key. | AccountMasteries | :x: |
-| [account/mastery/points](https://wiki.guildwars2.com/wiki/API:2/account/mastery/points) | Returns information about the total amount of mastery points associated with an API key. | AccountMasteryPoints | :x: |
-| [account/materials](https://wiki.guildwars2.com/wiki/API:2/account/materials) | Returns information about a material storage associated with an API key. | AccountMaterials | :x: |
-| [account/minis](https://wiki.guildwars2.com/wiki/API:2/account/minis) | Returns information about unlocked miniatures associated with an API key. | AccountMinis | :x: |
-| [account/mounts/skins](https://wiki.guildwars2.com/wiki/API:2/account/mounts/skins) | Returns information about unlocked mount skins associated with an API key. | AccountMountsSkins | :x: |
-| [account/mounts/types](https://wiki.guildwars2.com/wiki/API:2/account/mounts/types) | Returns information about unlocked mounts associated with an API key. | AccountMountsTypes | :x: |
-| [account/novelties](https://wiki.guildwars2.com/wiki/API:2/account/novelties) | Returns information about unlocked novelties associated with an API key. | AccountNovelties | :x: |
-| [account/outfits](https://wiki.guildwars2.com/wiki/API:2/account/outfits) | Returns information about unlocked outfits associated with an API key. | AccountOutfits | :x: |
-| [account/progression](https://wiki.guildwars2.com/wiki/API:2/account/progression) | Returns information about unlocked fractal account augmentation and acquired luck associated with an API key. | AccountProgression | :x: |
-| [account/pvp/heroes](https://wiki.guildwars2.com/wiki/API:2/account/pvp/heroes) | Returns information about unlocked PvP heroes associated with an API key. | AccountPvpHeroes | :x: |
-| [account/raids](https://wiki.guildwars2.com/wiki/API:2/account/raids) | Returns information about completed raid events between weekly resets associated with an API key. | AccountRaids | :x: |
-| [account/recipes](https://wiki.guildwars2.com/wiki/API:2/account/recipes) | Returns information about unlocked crafting recipes associated with an API key. | AccountRecipes | :x: |
-| [account/skiffs](https://wiki.guildwars2.com/wiki/API:2/account/skiffs) | Returns information about unlocked skiff skins associated with an API key. | AccountSkiffs | :x: |
-| [account/skins](https://wiki.guildwars2.com/wiki/API:2/account/skins) | Returns information about unlocked skins associated with an API key. | AccountSkins | :x: |
-| [account/titles](https://wiki.guildwars2.com/wiki/API:2/account/titles) | Returns information about unlocked titles associated with an API key. | AccountTitles | :x: |
-| [account/wallet](https://wiki.guildwars2.com/wiki/API:2/account/wallet) | Returns information about wealth associated with an API key. | AccountWallet | :x: |
-| [account/wizardsvault/daily](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/daily) | Returns information about the Daily Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultDaily | :x: |
-| [account/wizardsvault/listings](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/listings) | Returns information about the Astral Rewards associated with an API Key. | AccountWizardsvaultListings | :x: |
-| [account/wizardsvault/special](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/special) | Returns information about the Special Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultSpecial | :x: |
-| [account/wizardsvault/weekly](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/weekly) | Returns information about the Weekly Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultWeekly | :x: |
-| [account/worldbosses](https://wiki.guildwars2.com/wiki/API:2/account/worldbosses) | Returns information about (daily) Core Tyria world boss clears (since the most recent reset) associated with an API key. | AccountWorldbosses | :x: |
-| [characters](https://wiki.guildwars2.com/wiki/API:2/characters) | Returns information on an account's characters. | Characters | :x: |
-| [commerce/transactions](https://wiki.guildwars2.com/wiki/API:2/commerce/transactions) | Returns information on an account's past and current trading post transactions. | CommerceTransactions | :x: |
-| [createsubtoken](https://wiki.guildwars2.com/wiki/API:2/createsubtoken) | Creates a subtoken that can be used in place of API Keys. The subtoken will have an expiry date and can be limited to a subset of the permissions granted to the API Key used during its creation as well as to a subset of accessible endpoints. | Createsubtoken | :x: |
-| [pvp/stats](https://wiki.guildwars2.com/wiki/API:2/pvp/stats) | Returns general information on a player's performance in sPvP. | PvpStats | :x: |
-| [pvp/games](https://wiki.guildwars2.com/wiki/API:2/pvp/games) | Returns more detailed information on the player's most recent sPvP matches. | PvpGames | :x: |
-| [pvp/standings](https://wiki.guildwars2.com/wiki/API:2/pvp/standings) | Returns the best and current standing of a player in sPvP leagues. | PvpStandings | :x: |
-| [tokeninfo](https://wiki.guildwars2.com/wiki/API:2/tokeninfo) | Returns information about the supplied API Key. | Tokeninfo | :x: |
+| [account](https://wiki.guildwars2.com/wiki/API:2/account) | Returns information about an account associated with an API key. | Account | :heavy_check_mark: |
+| [account/achievements](https://wiki.guildwars2.com/wiki/API:2/account/achievements) | Returns information about an account's achievement progress. | AccountAchievements | :heavy_check_mark: |
+| [account/bank](https://wiki.guildwars2.com/wiki/API:2/account/bank) | Returns information about a bank associated with an API key. | AccountBank | :heavy_check_mark: |
+| [account/dailycrafting](https://wiki.guildwars2.com/wiki/API:2/account/dailycrafting) | Returns information about (daily) crafted materials (since the most recent reset) associated with an API key. | AccountDailycrafting | :heavy_check_mark: |
+| [account/dungeons](https://wiki.guildwars2.com/wiki/API:2/account/dungeons) | Returns information about the current daily cleared dungeons associated with an API key. | AccountDungeons | :heavy_check_mark: |
+| [account/dyes](https://wiki.guildwars2.com/wiki/API:2/account/dyes) | Returns information about unlocked dyes associated with an API key. | AccountDyes | :heavy_check_mark: |
+| [account/finishers](https://wiki.guildwars2.com/wiki/API:2/account/finishers) | Returns information about unlocked finishers associated with an API key. | AccountFinishers | :heavy_check_mark: |
+| [account/gliders](https://wiki.guildwars2.com/wiki/API:2/account/gliders) | Returns information about unlocked gliders associated with an API key. | AccountGliders | :heavy_check_mark: |
+| [account/home/cats](https://wiki.guildwars2.com/wiki/API:2/account/home/cats) | Returns information about unlocked cats in the home instance associated with an API key. | AccountHomeCats | :heavy_check_mark: |
+| [account/home/nodes](https://wiki.guildwars2.com/wiki/API:2/account/home/nodes) | Returns information about unlocked nodes in the home instance associated with an API key. | AccountHomeNodes | :heavy_check_mark: |
+| [account/inventory](https://wiki.guildwars2.com/wiki/API:2/account/inventory) | Returns information about the shared inventory slots associated with an API key. | AccountInventory | :heavy_check_mark: |
+| [account/jadebots](https://wiki.guildwars2.com/wiki/API:2/account/jadebots) | Returns information about unlocked jade bot skins associated with an API key. | AccountJadebots | :heavy_check_mark: |
+| [account/luck](https://wiki.guildwars2.com/wiki/API:2/account/luck) | Returns information about acquired luck associated with an API key. | AccountLuck | :heavy_check_mark: |
+| [account/legendaryarmory](https://wiki.guildwars2.com/wiki/API:2/account/legendaryarmory) | Returns information about the Legendary Armory associated with an API key. | AccountLegendaryarmory | :heavy_check_mark: |
+| [account/mailcarriers](https://wiki.guildwars2.com/wiki/API:2/account/mailcarriers) | Returns information about the mail carriers associated with an API key. | AccountMailcarriers | :heavy_check_mark: |
+| [account/mapchests](https://wiki.guildwars2.com/wiki/API:2/account/mapchests) | Returns information about (daily) map chest rewards received (since the most recent reset) associated with an API key. | AccountMapchests | :heavy_check_mark: |
+| [account/masteries](https://wiki.guildwars2.com/wiki/API:2/account/masteries) | Returns information about unlocked masteries associated with an API key. | AccountMasteries | :heavy_check_mark: |
+| [account/mastery/points](https://wiki.guildwars2.com/wiki/API:2/account/mastery/points) | Returns information about the total amount of mastery points associated with an API key. | AccountMasteryPoints | :heavy_check_mark: |
+| [account/materials](https://wiki.guildwars2.com/wiki/API:2/account/materials) | Returns information about a material storage associated with an API key. | AccountMaterials | :heavy_check_mark: |
+| [account/minis](https://wiki.guildwars2.com/wiki/API:2/account/minis) | Returns information about unlocked miniatures associated with an API key. | AccountMinis | :heavy_check_mark: |
+| [account/mounts/skins](https://wiki.guildwars2.com/wiki/API:2/account/mounts/skins) | Returns information about unlocked mount skins associated with an API key. | AccountMountsSkins | :heavy_check_mark: |
+| [account/mounts/types](https://wiki.guildwars2.com/wiki/API:2/account/mounts/types) | Returns information about unlocked mounts associated with an API key. | AccountMountsTypes | :heavy_check_mark: |
+| [account/novelties](https://wiki.guildwars2.com/wiki/API:2/account/novelties) | Returns information about unlocked novelties associated with an API key. | AccountNovelties | :heavy_check_mark: |
+| [account/outfits](https://wiki.guildwars2.com/wiki/API:2/account/outfits) | Returns information about unlocked outfits associated with an API key. | AccountOutfits | :heavy_check_mark: |
+| [account/progression](https://wiki.guildwars2.com/wiki/API:2/account/progression) | Returns information about unlocked fractal account augmentation and acquired luck associated with an API key. | AccountProgression | :heavy_check_mark: |
+| [account/pvp/heroes](https://wiki.guildwars2.com/wiki/API:2/account/pvp/heroes) | Returns information about unlocked PvP heroes associated with an API key. | AccountPvpHeroes | :heavy_check_mark: |
+| [account/raids](https://wiki.guildwars2.com/wiki/API:2/account/raids) | Returns information about completed raid events between weekly resets associated with an API key. | AccountRaids | :heavy_check_mark: |
+| [account/recipes](https://wiki.guildwars2.com/wiki/API:2/account/recipes) | Returns information about unlocked crafting recipes associated with an API key. | AccountRecipes | :heavy_check_mark: |
+| [account/skiffs](https://wiki.guildwars2.com/wiki/API:2/account/skiffs) | Returns information about unlocked skiff skins associated with an API key. | AccountSkiffs | :heavy_check_mark: |
+| [account/skins](https://wiki.guildwars2.com/wiki/API:2/account/skins) | Returns information about unlocked skins associated with an API key. | AccountSkins | :heavy_check_mark: |
+| [account/titles](https://wiki.guildwars2.com/wiki/API:2/account/titles) | Returns information about unlocked titles associated with an API key. | AccountTitles | :heavy_check_mark: |
+| [account/wallet](https://wiki.guildwars2.com/wiki/API:2/account/wallet) | Returns information about wealth associated with an API key. | AccountWallet | :heavy_check_mark: |
+| [account/wizardsvault/daily](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/daily) | Returns information about the Daily Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultDaily | :heavy_check_mark: |
+| [account/wizardsvault/listings](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/listings) | Returns information about the Astral Rewards associated with an API Key. | AccountWizardsvaultListings | :heavy_check_mark: |
+| [account/wizardsvault/special](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/special) | Returns information about the Special Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultSpecial | :heavy_check_mark: |
+| [account/wizardsvault/weekly](https://wiki.guildwars2.com/wiki/API:2/account/wizardsvault/weekly) | Returns information about the Weekly Wizard's Vault objectives and progress associated with an API Key. | AccountWizardsvaultWeekly | :heavy_check_mark: |
+| [account/worldbosses](https://wiki.guildwars2.com/wiki/API:2/account/worldbosses) | Returns information about (daily) Core Tyria world boss clears (since the most recent reset) associated with an API key. | AccountWorldbosses | :heavy_check_mark: |
+| [characters](https://wiki.guildwars2.com/wiki/API:2/characters) | Returns information on an account's characters. | Characters | :heavy_check_mark: |
+| [commerce/transactions](https://wiki.guildwars2.com/wiki/API:2/commerce/transactions) | Returns information on an account's past and current trading post transactions. | CommerceTransactions | :heavy_check_mark: |
+| [createsubtoken](https://wiki.guildwars2.com/wiki/API:2/createsubtoken) | Creates a subtoken that can be used in place of API Keys. The subtoken will have an expiry date and can be limited to a subset of the permissions granted to the API Key used during its creation as well as to a subset of accessible endpoints. | Createsubtoken | :heavy_check_mark: |
+| [pvp/stats](https://wiki.guildwars2.com/wiki/API:2/pvp/stats) | Returns general information on a player's performance in sPvP. | PvpStats | :heavy_check_mark: |
+| [pvp/games](https://wiki.guildwars2.com/wiki/API:2/pvp/games) | Returns more detailed information on the player's most recent sPvP matches. | PvpGames | :heavy_check_mark: |
+| [pvp/standings](https://wiki.guildwars2.com/wiki/API:2/pvp/standings) | Returns the best and current standing of a player in sPvP leagues. | PvpStandings | :heavy_check_mark: |
+| [tokeninfo](https://wiki.guildwars2.com/wiki/API:2/tokeninfo) | Returns information about the supplied API Key. | Tokeninfo | :heavy_check_mark: |
 ## Daily Rewards
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
