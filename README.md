@@ -66,11 +66,11 @@ This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild W
 each struct for each resource has one of those 3 methods available to use
 
 
-| Endpoint Methods | Args              | description                                                                                                                                                                                             |   |
-|------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
-| Get              | null              | simple request without any paramter                                                                                                                                                                     |   |
-| GetDetails       | string \| int     | updates the path based on the arg                                                                                                                                                                       |   |
-| GetDetails       | map[string]string | a list of parameters to add to the request, note : every method that use this arg must have the paramter key "ids" and  the value must be a list of values splited with "," exmaple "ids" : "1,2,3,4,5" |   |
+| Endpoint Methods | Args              | description                                                                                                                                                                                             |
+|------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Get              | null              | simple request without any paramter                                                                                                                                                                     |
+| GetDetails       | string \| int     | updates the path based on the arg                                                                                                                                                                       |
+| GetDetails       | map[string]string | a list of parameters to add to the request, note : every method that use this arg must have the paramter key "ids" and  the value must be a list of values splited with "," exmaple "ids" : "1,2,3,4,5" |
 
 # Available Resources
 
