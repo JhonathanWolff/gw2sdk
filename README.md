@@ -26,9 +26,8 @@ These sub-endpoints were not mentioned on the main page, and since this project 
 Please note that **contributions are welcome to update this repository with new resources or to fix unforeseen bugs**.
 
 
-**Installation**
+## Installation and Usage
 
-**Usage**
 
 1. Import the package:
 
@@ -51,7 +50,7 @@ Please note that **contributions are welcome to update this repository with new 
 
    ```
 
-**Available Resources**
+# Available Resources
 
 ## Achievements
 | endpoint | description | Api equivalent | implemented |
