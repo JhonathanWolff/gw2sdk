@@ -9,6 +9,14 @@ This project provides an unofficial Go library for extracting information from t
 This SDK currently only supports requests made against version 2 of the Guild Wars 2 Wiki REST API. Please refer to the official API documentation for details on V2 and any potential compatibility considerations.
 
 
+## Contributing
+
+We welcome contributions to this project! 
+
+## License
+
+This project is licensed under the MIT License (see `LICENSE.md` for details).
+
 ## Disclaimer
 
 This repository was created for practicing Golang. It implements the methods of the Guild Wars 2 API /V2:
@@ -24,6 +32,9 @@ And other sub-endpoints.
 
 These sub-endpoints were not mentioned on the main page, and since this project is for study purposes, I did not implement them.
 Please note that **contributions are welcome to update this repository with new resources or to fix unforeseen bugs**.
+
+
+This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild Wars 2 Wiki. Please refer to the official API documentation for the latest information and usage guidelines, especially regarding V2: [https://wiki.guildwars2.com/wiki/API:Main](https://wiki.guildwars2.com/wiki/API:Main)
 
 
 ## Installation and Usage
@@ -49,6 +60,15 @@ Please note that **contributions are welcome to update this repository with new 
 	var achivement = achivements.Category{Gw2sdk: gw2sdk}
 
    ```
+
+## Available methods
+
+
+| Endpoint Methods | Args              | description                                                                                                                                                                                             |   |
+|------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
+| Get              | null              | simple request without any paramter                                                                                                                                                                     |   |
+| GetDetails       | string \| int     | updates the path based on the arg                                                                                                                                                                       |   |
+| GetDetails       | map[string]string | a list of parameters to add to the request, note : every method that use this arg must have the paramter key "ids" and  the value must be a list of values splited with "," exmaple "ids" : "1,2,3,4,5" |   |
 
 # Available Resources
 
@@ -225,14 +245,3 @@ Please note that **contributions are welcome to update this repository with new 
 | [wvw/ranks](https://wiki.guildwars2.com/wiki/API:2/wvw/ranks) | Returns information about current WvW Rank. | WvwRanks | :x: |
 | [wvw/upgrades](https://wiki.guildwars2.com/wiki/API:2/wvw/upgrades) | Returns information about available upgrades for objectives. | WvwUpgrades | :x: |
 
-**Contributing**
-
-We welcome contributions to this project! 
-
-**License**
-
-This project is licensed under the MIT License (see `LICENSE.md` for details).
-
-**Disclaimer**
-
-This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild Wars 2 Wiki. Please refer to the official API documentation for the latest information and usage guidelines, especially regarding V2: [https://wiki.guildwars2.com/wiki/API:Main](https://wiki.guildwars2.com/wiki/API:Main)
