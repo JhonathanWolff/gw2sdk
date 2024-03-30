@@ -93,46 +93,46 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 ## Daily Rewards
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [dailycrafting](https://wiki.guildwars2.com/wiki/API:2/dailycrafting) | Returns information about daily craftable items. | Dailycrafting | :x: |
-| [mapchests](https://wiki.guildwars2.com/wiki/API:2/mapchests) | Returns information about daily acquirable map chests. | Mapchests | :x: |
-| [worldbosses](https://wiki.guildwars2.com/wiki/API:2/worldbosses) | Returns information about daily (Core Tyria) world boss clears. | Worldbosses | :x: |
+| [dailycrafting](https://wiki.guildwars2.com/wiki/API:2/dailycrafting) | Returns information about daily craftable items. | Dailycrafting | :heavy_check_mark: |
+| [mapchests](https://wiki.guildwars2.com/wiki/API:2/mapchests) | Returns information about daily acquirable map chests. | Mapchests | :heavy_check_mark: |
+| [worldbosses](https://wiki.guildwars2.com/wiki/API:2/worldbosses) | Returns information about daily (Core Tyria) world boss clears. | Worldbosses | :heavy_check_mark: |
 ## Game Mechanics
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [jadebots](https://wiki.guildwars2.com/wiki/API:2/jadebots) | Returns information about jade bot skins. | Jadebots | :x: |
-| [legendaryarmory](https://wiki.guildwars2.com/wiki/API:2/legendaryarmory) | Returns information about the Legendary Armory | Legendaryarmory | :x: |
-| [masteries](https://wiki.guildwars2.com/wiki/API:2/masteries) | Returns information about masteries. | Masteries | :x: |
-| [mounts](https://wiki.guildwars2.com/wiki/API:2/mounts) | Returns information about the v2/mounts endpoints. | Mounts | :x: |
-| [mounts/skins](https://wiki.guildwars2.com/wiki/API:2/mounts/skins) | Returns information about mount skins. | MountsSkins | :x: |
-| [mounts/types](https://wiki.guildwars2.com/wiki/API:2/mounts/types) | Returns information about mount types. | MountsTypes | :x: |
-| [outfits](https://wiki.guildwars2.com/wiki/API:2/outfits) | Returns information about outfits. | Outfits | :x: |
-| [pets](https://wiki.guildwars2.com/wiki/API:2/pets) | Returns information about pets. | Pets | :x: |
-| [professions](https://wiki.guildwars2.com/wiki/API:2/professions) | Returns information about professions. | Professions | :x: |
-| [races](https://wiki.guildwars2.com/wiki/API:2/races) | Returns information about particular racial skills. | Races | :x: |
-| [specializations](https://wiki.guildwars2.com/wiki/API:2/specializations) | Returns information about specializations. | Specializations | :x: |
-| [skiffs](https://wiki.guildwars2.com/wiki/API:2/skiffs) | Returns information about skiff skins. | Skiffs | :x: |
-| [skills](https://wiki.guildwars2.com/wiki/API:2/skills) | Returns information about skills. | Skills | :x: |
-| [traits](https://wiki.guildwars2.com/wiki/API:2/traits) | Returns information about traits. | Traits | :x: |
-| [legends](https://wiki.guildwars2.com/wiki/API:2/legends) | Returns information about revenant legends. | Legends | :x: |
+| [jadebots](https://wiki.guildwars2.com/wiki/API:2/jadebots) | Returns information about jade bot skins. | Jadebots | :heavy_check_mark: |
+| [legendaryarmory](https://wiki.guildwars2.com/wiki/API:2/legendaryarmory) | Returns information about the Legendary Armory | Legendaryarmory | :heavy_check_mark: |
+| [masteries](https://wiki.guildwars2.com/wiki/API:2/masteries) | Returns information about masteries. | Masteries | :heavy_check_mark: |
+| [mounts](https://wiki.guildwars2.com/wiki/API:2/mounts) | Returns information about the v2/mounts endpoints. | Mounts | :heavy_check_mark: |
+| [mounts/skins](https://wiki.guildwars2.com/wiki/API:2/mounts/skins) | Returns information about mount skins. | MountsSkins | :heavy_check_mark: |
+| [mounts/types](https://wiki.guildwars2.com/wiki/API:2/mounts/types) | Returns information about mount types. | MountsTypes | :heavy_check_mark: |
+| [outfits](https://wiki.guildwars2.com/wiki/API:2/outfits) | Returns information about outfits. | Outfits | :heavy_check_mark: |
+| [pets](https://wiki.guildwars2.com/wiki/API:2/pets) | Returns information about pets. | Pets | :heavy_check_mark: |
+| [professions](https://wiki.guildwars2.com/wiki/API:2/professions) | Returns information about professions. | Professions | :heavy_check_mark: |
+| [races](https://wiki.guildwars2.com/wiki/API:2/races) | Returns information about particular racial skills. | Races | :heavy_check_mark: |
+| [specializations](https://wiki.guildwars2.com/wiki/API:2/specializations) | Returns information about specializations. | Specializations | :heavy_check_mark: |
+| [skiffs](https://wiki.guildwars2.com/wiki/API:2/skiffs) | Returns information about skiff skins. | Skiffs | :heavy_check_mark: |
+| [skills](https://wiki.guildwars2.com/wiki/API:2/skills) | Returns information about skills. | Skills | :heavy_check_mark: |
+| [traits](https://wiki.guildwars2.com/wiki/API:2/traits) | Returns information about traits. | Traits | :heavy_check_mark: |
+| [legends](https://wiki.guildwars2.com/wiki/API:2/legends) | Returns information about revenant legends. | Legends | :heavy_check_mark: |
 ## Guild
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [guild/:id](https://wiki.guildwars2.com/wiki/API:2/guild/:id) | Returns core details about a given guild. | Guild:id | :x: |
-| [emblem](https://wiki.guildwars2.com/wiki/API:2/emblem) | Returns image resources needed to render guild emblems. | Emblem | :x: |
-| [guild/permissions](https://wiki.guildwars2.com/wiki/API:2/guild/permissions) | Returns information about guild rank permissions. | GuildPermissions | :x: |
-| [guild/search](https://wiki.guildwars2.com/wiki/API:2/guild/search) | Returns information on guild ids to be used for other API queries. | GuildSearch | :x: |
-| [guild/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/upgrades) | Returns information about guild upgrades and scribe decorations. | GuildUpgrades | :x: |
+| [guild/:id](https://wiki.guildwars2.com/wiki/API:2/guild/:id) | Returns core details about a given guild. | Guild:id | :heavy_check_mark: |
+| [emblem](https://wiki.guildwars2.com/wiki/API:2/emblem) | Returns image resources needed to render guild emblems. | Emblem | :heavy_check_mark: |
+| [guild/permissions](https://wiki.guildwars2.com/wiki/API:2/guild/permissions) | Returns information about guild rank permissions. | GuildPermissions | :heavy_check_mark: |
+| [guild/search](https://wiki.guildwars2.com/wiki/API:2/guild/search) | Returns information on guild ids to be used for other API queries. | GuildSearch | :heavy_check_mark: |
+| [guild/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/upgrades) | Returns information about guild upgrades and scribe decorations. | GuildUpgrades | :heavy_check_mark: |
 ## Guild Authenticated
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [guild/:id/log](https://wiki.guildwars2.com/wiki/API:2/guild/:id/log) | Returns information about a guild's event log. | Guild:idLog | :x: |
-| [guild/:id/members](https://wiki.guildwars2.com/wiki/API:2/guild/:id/members) | Returns information about members of a guild. | Guild:idMembers | :x: |
-| [guild/:id/ranks](https://wiki.guildwars2.com/wiki/API:2/guild/:id/ranks) | Returns information about the permission ranks of a guild. | Guild:idRanks | :x: |
-| [guild/:id/stash](https://wiki.guildwars2.com/wiki/API:2/guild/:id/stash) | Returns information about the contents of a guild's stash. | Guild:idStash | :x: |
-| [guild/:id/storage](https://wiki.guildwars2.com/wiki/API:2/guild/:id/storage) | Returns information about the contents of a guild's storage. | Guild:idStorage | :x: |
-| [guild/:id/treasury](https://wiki.guildwars2.com/wiki/API:2/guild/:id/treasury) | Returns information about a guild's treasury contents. | Guild:idTreasury | :x: |
-| [guild/:id/teams](https://wiki.guildwars2.com/wiki/API:2/guild/:id/teams) | Returns information about a guild's teams. | Guild:idTeams | :x: |
-| [guild/:id/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/:id/upgrades) | Returns information about a guild's upgrades. | Guild:idUpgrades | :x: |
+| [guild/:id/log](https://wiki.guildwars2.com/wiki/API:2/guild/:id/log) | Returns information about a guild's event log. | Guild:idLog | :heavy_check_mark: |
+| [guild/:id/members](https://wiki.guildwars2.com/wiki/API:2/guild/:id/members) | Returns information about members of a guild. | Guild:idMembers | :heavy_check_mark: |
+| [guild/:id/ranks](https://wiki.guildwars2.com/wiki/API:2/guild/:id/ranks) | Returns information about the permission ranks of a guild. | Guild:idRanks | :heavy_check_mark: |
+| [guild/:id/stash](https://wiki.guildwars2.com/wiki/API:2/guild/:id/stash) | Returns information about the contents of a guild's stash. | Guild:idStash | :heavy_check_mark: |
+| [guild/:id/storage](https://wiki.guildwars2.com/wiki/API:2/guild/:id/storage) | Returns information about the contents of a guild's storage. | Guild:idStorage | :heavy_check_mark: |
+| [guild/:id/treasury](https://wiki.guildwars2.com/wiki/API:2/guild/:id/treasury) | Returns information about a guild's treasury contents. | Guild:idTreasury | :heavy_check_mark: |
+| [guild/:id/teams](https://wiki.guildwars2.com/wiki/API:2/guild/:id/teams) | Returns information about a guild's teams. | Guild:idTeams | :heavy_check_mark: |
+| [guild/:id/upgrades](https://wiki.guildwars2.com/wiki/API:2/guild/:id/upgrades) | Returns information about a guild's upgrades. | Guild:idUpgrades | :heavy_check_mark: |
 ## Home Instance
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
@@ -207,7 +207,6 @@ This SDK currently only supports requests made against version 2 of the Guild Wa
 | [wvw/objectives](https://wiki.guildwars2.com/wiki/API:2/wvw/objectives) | Returns information about WvW objectives. | WvwObjectives | :x: |
 | [wvw/ranks](https://wiki.guildwars2.com/wiki/API:2/wvw/ranks) | Returns information about current WvW Rank. | WvwRanks | :x: |
 | [wvw/upgrades](https://wiki.guildwars2.com/wiki/API:2/wvw/upgrades) | Returns information about available upgrades for objectives. | WvwUpgrades | :x: |
-
 
 **Contributing**
 
