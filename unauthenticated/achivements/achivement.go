@@ -1,7 +1,6 @@
-package achivements
+package unauthenticated
 
 import (
-	"fmt"
 	Connection "gw2sdk/connection"
 )
 
@@ -30,19 +29,17 @@ type AchivementResponseDetails []struct {
 	} `json:"rewards"`
 }
 
-// https://wiki.guildwars2.com/wiki/API:2/achievements
-func (a *Achivement) Get(parameters map[string]string) interface{} {
-
-	if parameters != nil && len(parameters) > 0 {
-		fmt.Println("details")
-		response := AchivementResponseDetails{}
-		a.Gw2sdk.Retrieve("achievements", parameters, &response)
-		return response
-	}
-
-	fmt.Println("list")
-	response := AchivementResponse{}
+func (a *Achivement) GetDtails(parameters map[string]string) interface{} {
+	response := AchivementResponseDetails{}
 	a.Gw2sdk.Retrieve("achievements", parameters, &response)
+	return response
+
+}
+
+func (a *Achivement) Get() interface{} {
+
+	response := AchivementResponse{}
+	a.Gw2sdk.Retrieve("achievements", nil, &response)
 	return response
 
 }

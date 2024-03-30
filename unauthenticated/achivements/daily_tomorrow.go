@@ -1,4 +1,4 @@
-package achivements
+package unauthenticated
 
 import Connection "gw2sdk/connection"
 
