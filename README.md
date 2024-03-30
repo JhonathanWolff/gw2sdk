@@ -63,6 +63,8 @@ This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild W
 
 ## Available methods
 
+each struct for each resource has one of those 3 methods available to use
+
 
 | Endpoint Methods | Args              | description                                                                                                                                                                                             |   |
 |------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
