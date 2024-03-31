@@ -103,7 +103,6 @@ func parallel_request() {
 its possible to run this method for `GetDetails (value string)` and `GetDetails(parameters map[string]string)`
 
 
-
 * `GetDetails (value string)` --> `ParallelGetDetailsPath`
 * `GetDetails(parameters map[string]string)` --> `ParallelGetDetailsParameters`
 
