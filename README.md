@@ -72,6 +72,44 @@ each struct for each resource has one of those 3 methods available to use
 | GetDetails       | string \| int     | updates the path based on the arg                                                                                                                                                                       |
 | GetDetails       | map[string]string | a list of parameters to add to the request, note : every method that use this arg must have the paramter key "ids" and  the value must be a list of values splited with "," exmaple "ids" : "1,2,3,4,5" |
 
+
+## Parallalel request
+If you want to run a parallel request 
+its possible to run using the parallel methods inside the sdk
+
+```go
+
+
+//example for simple request
+
+import 	"gw2sdk/parallel"
+
+func parallel_request() {
+
+	var gw2sdk connection.GW2sdk = connection.GW2sdk{Token: os.Getenv("GW2_TOKEN")}
+	var array_request []parallel.GetRequest
+	for i := 0; i < 10; i++ {
+		client := unauthenticated.Achivement{Gw2sdk: gw2sdk}
+		array_request = append(array_request, &client)
+	}
+	array_response := parallel.ParallelGet(array_request)
+
+	for _, resp := range array_response {
+		fmt.Println(string(resp))
+	}
+
+}
+
+its possible to run this method for `GetDetails (value string)` and `GetDetails(parameters map[string]string)`
+
+
+
+* `GetDetails (value string)` --> `ParallelGetDetailsPath`
+* `GetDetails(parameters map[string]string)` --> `ParallelGetDetailsParameters`
+
+
+```
+
 # Available Resources
 
 ## Achievements

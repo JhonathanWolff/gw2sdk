@@ -27,10 +27,10 @@ func (a *Jadebots) Get() JadebotsResponse {
 
 }
 
-func (a *Jadebots) GetDetails(id int) JadebotsResponseDetails {
+func (a *Jadebots) GetDetails(id string) JadebotsResponseDetails {
 
 	response := JadebotsResponseDetails{}
-	path := fmt.Sprintf("jadebots/%d", id)
+	path := fmt.Sprintf("jadebots/%s", id)
 	a.Gw2sdk.Retrieve(path, nil, &response)
 
 	return response

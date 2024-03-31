@@ -34,10 +34,10 @@ type GuildResponseDetails struct {
 	} `json:"emblem"`
 }
 
-func (a *Guild) GetDetails(id int) GuildResponseDetails {
+func (a *Guild) GetDetails(id string) GuildResponseDetails {
 
 	response := GuildResponseDetails{}
-	path := fmt.Sprintf("guild/%d", id)
+	path := fmt.Sprintf("guild/%s", id)
 	a.Gw2sdk.Retrieve(path, nil, &response)
 
 	return response

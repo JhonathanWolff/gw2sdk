@@ -4,8 +4,14 @@ import (
 	Connection "gw2sdk/connection"
 )
 
+type GetRequest interface {
+	Get() interface{}
+	GetDetails() interface{}
+}
+
 type Achivement struct {
-	Gw2sdk Connection.GW2sdk
+	Gw2sdk     Connection.GW2sdk
+	GetRequest GetRequest
 }
 
 type AchivementResponse []int

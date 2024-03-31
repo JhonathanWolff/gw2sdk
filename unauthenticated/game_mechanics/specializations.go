@@ -31,10 +31,10 @@ func (a *Specializations) Get() SpecializationsResponse {
 
 }
 
-func (a *Specializations) GetDetails(id int) SpecializationsResponseDetails {
+func (a *Specializations) GetDetails(id string) SpecializationsResponseDetails {
 
 	response := SpecializationsResponseDetails{}
-	path := fmt.Sprintf("specializations/%d", id)
+	path := fmt.Sprintf("specializations/%s", id)
 	a.Gw2sdk.Retrieve(path, nil, &response)
 
 	return response
