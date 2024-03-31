@@ -61,6 +61,13 @@ This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild W
 
    ```
 
+## API Rate Limits
+Rate Limit
+Max Burst Size (bucket size): 300
+Refill Rate: 5 tokens per second (300 per minute)
+With 300 burst and a refill of 5 tokens per second, you will get a reliable stream of requests with no 429s.
+
+
 ## Available methods
 
 each struct for each resource has one of those 3 methods available to use
@@ -75,7 +82,7 @@ each struct for each resource has one of those 3 methods available to use
 
 ## Parallalel request
 If you want to run a parallel request 
-its possible to run using the parallel methods inside the sdk
+its possible to run using the parallel methods inside the sdk and avoiding the rate limit for the API
 
 ```go
 
