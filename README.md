@@ -62,10 +62,10 @@ This is an unofficial SDK and is not affiliated with Guild Wars 2 or the Guild W
    ```
 
 ## API Rate Limits
-Rate Limit
-Max Burst Size (bucket size): 300
-Refill Rate: 5 tokens per second (300 per minute)
-With 300 burst and a refill of 5 tokens per second, you will get a reliable stream of requests with no 429s.
+
+* Max Burst Size (bucket size): 300
+* Refill Rate: 5 tokens per second (300 per minute)
+* With 300 burst and a refill of 5 tokens per second, you will get a reliable stream of requests with no 429s.
 
 
 ## Available methods
@@ -76,7 +76,7 @@ each struct for each resource has one of those 3 methods available to use
 | Endpoint Methods | Args              | description                                                                                                                                                                                             |
 |------------------|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Get              | null              | simple request without any paramter                                                                                                                                                                     |
-| GetDetails       | string \| int     | updates the path based on the arg                                                                                                                                                                       |
+| GetDetails       | string      | updates the path based on the arg                                                                                                                                                                       |
 | GetDetails       | map[string]string | a list of parameters to add to the request, note : every method that use this arg must have the paramter key "ids" and  the value must be a list of values splited with "," exmaple "ids" : "1,2,3,4,5" |
 
 
@@ -218,8 +218,8 @@ its possible to run this method for `GetDetails (value string)` and `GetDetails(
 ## Home Instance
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
-| [home/cats](https://wiki.guildwars2.com/wiki/API:2/home/cats) | Returns information about cats that can be unlocked in the home instance. | HomeCats | :x: |
-| [home/nodes](https://wiki.guildwars2.com/wiki/API:2/home/nodes) | Returns information about home instance upgrades. | HomeNodes | :x: |
+| [home/cats](https://wiki.guildwars2.com/wiki/API:2/home/cats) | Returns information about cats that can be unlocked in the home instance. | HomeCats | :heavy_check_mark: |
+| [home/nodes](https://wiki.guildwars2.com/wiki/API:2/home/nodes) | Returns information about home instance upgrades. | HomeNodes | :heavy_check_mark: |
 ## Items
 | endpoint | description | Api equivalent | implemented |
 | --- | --- | --- | --- |
