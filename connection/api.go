@@ -15,6 +15,11 @@ type GW2sdk struct {
 	ApiResponse ApiResponse
 }
 
+type GetRequest interface {
+	Get() interface{}
+	GetDetails() interface{}
+}
+
 func ParseParameters(url string, parameters map[string]string) string {
 
 	if parameters == nil {
